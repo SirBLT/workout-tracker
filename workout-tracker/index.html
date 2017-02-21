@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="workout">
+  <head>
+    <title>Workout Builder Home</title>
+    <link rel="stylesheet" href="./../style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="pageHead">Better Life Tracker</h1>
+    </header>
+
+    <nav id="main">
+      <ul>
+        <li class="logo"><a href="#">BLT</a></li>
+        <li><a ui-sref="home">HOME</a></li>
+        <li><a ui-sref="login">LOG-IN</a></li>
+        <li><a ui-sref="workout">WORKOUT INDEX</a></li>
+        <li><a ui-sref="logWorkout">LOG A WORKOUT</a></li>
+      </ul>
+    </nav>
+
+      <ui-view></ui-view>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+        <script src="./public/app.js"></script>
+        <script src="./public/mainCtrl.js"></script>
+        <script src="./public/service.js"></script>
+        <script src="./public/nav.js"></script>
+
+
+  </body>
+</html>
