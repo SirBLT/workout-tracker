@@ -24,4 +24,9 @@ angular.module('workout', ['ui.router'])
     controller: 'mainCtrl',
     templateUrl: '/views/log-workout.html'
   })
+  .state('myWorkouts', {
+    url: '/my-workouts',
+    controller: 'mainCtrl',
+    templateUrl: '/views/my-workouts.html'
+  })
 })
